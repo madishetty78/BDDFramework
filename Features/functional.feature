@@ -19,8 +19,19 @@
 @tag
 Feature: CRM Application Functional Test
 
+  #Background: Given Login into CRM Application
+  @sample
   Scenario: CRM Login test
     Given Login into CRM Application
-    When Navigate the Menu
-    Then Create new Contacts
+    #When Navigate the Menu
+    Then Create new Contacts based on below details
+      | FieldName   | FieldValue        |
+      | FirstName   | Anil              |
+      | LastName    | Madishetty        |
+      | MiddleName  | Kumar             |
+      | Company     | SCB               |
+      | Email       | anils78@yahoo.com |
+      | Category    | Lead              |
+      | Status      | Active            |
+      | Description | Test Description  |
     #Then Logout the Application

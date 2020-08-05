@@ -3,6 +3,7 @@ package com.learnautomation.pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class FreecrmLoginPage {
 WebDriver driver;
@@ -10,6 +11,7 @@ WebDriver driver;
 	public FreecrmLoginPage(WebDriver ldriver)
 	{
 		this.driver = ldriver;
+		//PageFactory.initElements(driver, FreecrmLoginPage.class);
 	}
 	
     @FindBy(linkText="Log In") WebElement Loginlink;
@@ -17,6 +19,8 @@ WebDriver driver;
     @FindBy(name="password") WebElement Password;
     @FindBy(xpath="//*[@id=\"ui\"]/div/div/form/div/div[3]") WebElement Loginbutton;
    
+    
+    
    public void loginTofreecrm(String uname,String pswd) throws InterruptedException
    {
 	   Thread.sleep(3000);

@@ -3,14 +3,20 @@ package com.learnautomation.utility;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.openqa.selenium.JavascriptExecutor;
+
 
 public class BrowserFactory {
 
-	public static WebDriver startApplication( WebDriver driver, String browserName, String appURL)
-	{
+	public static WebDriver startApplication( String browserName, String appURL)
+	{ 
+		// Original Main Driver instance created
+		WebDriver driver = null;
+		
 		if(browserName.equals("Chrome"))
 		{
 			System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
@@ -37,10 +43,39 @@ public class BrowserFactory {
 		driver.manage().deleteAllCookies();
 		driver.get(appURL);
 		driver.manage().deleteAllCookies();
+
+		// Implicit Wait 
 		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
 		
 		return driver;
 	}
+	
+	//to perform Scroll on application using Selenium
+	public static void scrollDownBrowser(WebDriver driver)
+	{ 
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,400)", "");
+	}
+	
+	public static void scrollUpBrowser(WebDriver driver)
+	{
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,-400)", "");
+	}
+	
+	public static void scrollDownBottomBrowser(WebDriver driver)
+	{
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
+	}
+	
+	 //This will scroll the page Horizontally till the element is found
+	public static void ScrollHorizontallyBrowser(WebDriver driver, WebElement element)
+	{
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("arguments[0].scrollIntoView();", element);
+	}
+	
 	
 	public  static void quitBrowser(WebDriver driver)
 	{
