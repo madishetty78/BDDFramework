@@ -1,0 +1,24 @@
+2020-09-25 15:21:42 INFO  BrowserFactory:46 - Initializing the browser instance as : Chrome
+2020-09-25 15:22:28 INFO  ContactsPage:84 - Contact Page - Start creating new Contact  
+2020-09-25 15:22:28 INFO  ContactsPage:146 - Contact Page - FirstName Entered 
+2020-09-25 15:22:29 INFO  ContactsPage:152 - Contact Page - LastName Entered 
+2020-09-25 15:22:29 INFO  ContactsPage:158 - Contact Page - MiddleName Entered 
+2020-09-25 15:22:29 INFO  ContactsPage:164 - Contact Page - Company Entered 
+2020-09-25 15:22:30 INFO  ContactsPage:170 - Contact Page - Email Entered 
+2020-09-25 15:22:30 INFO  ContactsPage:183 - Contact Page - Category Entered 
+2020-09-25 15:22:30 INFO  ContactsPage:199 - Contact Page - Status Entered 
+2020-09-25 15:22:31 INFO  ContactsPage:208 - Contact Page - Description Entered 
+2020-09-25 15:22:34 INFO  ContactsPage:136 - Contact Page - End creating new Contact  
+2020-09-25 15:40:16 INFO  BrowserFactory:46 - Initializing the browser instance as : Chrome
+2020-09-25 15:40:31 INFO  BrowserFactory:46 - Initializing the browser instance as : Chrome
+2020-09-25 15:41:11 INFO  BrowserFactory:46 - Initializing the browser instance as : Chrome
+2020-09-25 15:41:57 INFO  ContactsPage:84 - Contact Page - Start creating new Contact  
+2020-09-25 15:41:57 INFO  ContactsPage:146 - Contact Page - FirstName Entered 
+2020-09-25 15:41:57 INFO  ContactsPage:152 - Contact Page - LastName Entered 
+2020-09-25 15:41:57 INFO  ContactsPage:158 - Contact Page - MiddleName Entered 
+2020-09-25 15:41:58 INFO  ContactsPage:164 - Contact Page - Company Entered 
+2020-09-25 15:41:58 INFO  ContactsPage:170 - Contact Page - Email Entered 
+2020-09-25 15:41:58 INFO  ContactsPage:183 - Contact Page - Category Entered 
+2020-09-25 15:41:59 INFO  ContactsPage:199 - Contact Page - Status Entered 
+2020-09-25 15:41:59 INFO  ContactsPage:208 - Contact Page - Description Entered 
+2020-09-25 15:42:03 INFO  ContactsPage:136 - Contact Page - End creating new Contact  
